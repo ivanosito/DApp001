@@ -141,7 +141,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/TipJarWithMessages.sol": "TipJar"
+			"contracts/TipJarWithMessages.sol": "TipJarWithMessages"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -156,11 +156,11 @@
 	},
 	"sources": {
 		"contracts/TipJarWithMessages.sol": {
-			"keccak256": "0x1fc0ba632be4d7850dc178aa253f4666eb6d71547f334121e0cb837b537886ba",
+			"keccak256": "0x9a4aeb3f6009c874f0ef890c7b90d099e959f1ac9327fe06ca6325056c000fc3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2808ff7bcea42859d4d3692a0dd8cf25195f7b09bd6bd9c95de725ce8e802d0a",
-				"dweb:/ipfs/QmdMBKeoTtJYPhUhYxabWzAUhvqgsTxSgP9xUvNXfqgFxw"
+				"bzz-raw://a51adcfc32f350550be77516d2951e779fafb45c079f05b7651c2aba7325855f",
+				"dweb:/ipfs/QmcYCskP6w4TWt3xZCwRuUUaVHc8fAEiDkbJ1NX9ccepp9"
 			]
 		}
 	},

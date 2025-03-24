@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// DApp's with Scarlett - Example 006
+// DApp's with Scarlett - Example 007
 pragma solidity ^0.8.0;
 
 contract FunctionTypesDemo {
@@ -10,33 +10,39 @@ contract FunctionTypesDemo {
         owner = msg.sender;
     }
 
-    // 📖 VIEW — Reads the state
+    // 🔒 Modifier — Access control for the owner
+    modifier onlyOwner() {
+        require(msg.sender == owner, "You are not the owner.");
+        _;
+    }
+
     function getDonations() public view returns (uint) {
         return donations;
     }
 
-    // 🧮 PURE — Only math, no state
     function multiply(uint a, uint b) public pure returns (uint) {
         return a * b;
     }
 
-    // 💸 PAYABLE — Accepts ETH and updates state
+    // PAYABLE + modifier
     function donate() public payable {
         require(msg.value > 0, "Send some ETH to donate!");
         donations += msg.value;
     }
 
-    // 🔐 INTERNAL — Can only be used from within the contract
+    // NEW: Only owner can reset donation count
+    function resetDonations() public onlyOwner {
+        donations = 0;
+    }
+
     function internalMagic() internal pure returns (string memory) {
         return "Inner power activated";
     }
 
-    // 🌍 EXTERNAL — Must be called from outside the contract
     function greetExternal() external pure returns (string memory) {
         return "Greetings from the EVM realm!";
     }
 
-    // 🧙‍♂️ PUBLIC — Calls the internal function (demonstrates `internal`)
     function showInnerSpell() public pure returns (string memory) {
         return internalMagic();
     }

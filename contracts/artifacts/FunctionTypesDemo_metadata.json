@@ -95,6 +95,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "resetDonations",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "showInnerSpell",
 				"outputs": [
 					{
@@ -135,11 +142,11 @@
 	},
 	"sources": {
 		"contracts/FunctionTypesDemo.sol": {
-			"keccak256": "0x8593963b9d84969087735a2bb146c6ddd581366346fd6319901bdce9282b80cb",
+			"keccak256": "0x01125ebf20b48a913504e17b4ba4daa7689ba4289f42539acc398b18b03f5713",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c86ddc1e012cf9271b9df4a253541477f9048924ee963133734f4867a003072a",
-				"dweb:/ipfs/QmTwYY6c2kAcyCq7jSL6bkAEUjmD4U5gLk3NF48sA8t33x"
+				"bzz-raw://a6d556dc826db88a03c9d4304bfacdeee076603573cede3116b13bb2f3c4b82d",
+				"dweb:/ipfs/QmT7BnpkCpDZMnZ4FG575xiYHLBdQnarDVo8mN85PwGmYi"
 			]
 		}
 	},

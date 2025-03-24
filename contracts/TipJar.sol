@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// DApp's with Scarlett - Example 003
 pragma solidity ^0.8.0;
 
 contract TipJarWithMessages {

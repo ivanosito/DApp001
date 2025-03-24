@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-// DApp's with Scarlett - Example 004
+// DApp's with Scarlett - Example 005
 pragma solidity ^0.8.0;
 
-contract TipJarWithMessages {
+contract TipJarWithEvents {
     address public owner;
 
     struct Tip {
@@ -13,14 +13,20 @@ contract TipJarWithMessages {
 
     Tip[] public tips;
 
+    // 📣 EVENT: Log every tip sent to the jar
+    event Tipped(address indexed from, uint amount, string message);
+
     constructor() {
         owner = msg.sender;
     }
 
-    // Send ETH and a message
+    // Users send ETH + a message, and we log it!
     function sendTip(string memory _message) public payable {
-        require(msg.value > 0, "La propina debe ser mayor a 0");
+        require(msg.value > 0, "Tip must be greater than 0");
         tips.push(Tip(msg.sender, msg.value, _message));
+        
+        // ✨ Here’s the spell:
+        emit Tipped(msg.sender, msg.value, _message);
     }
 
     function getBalance() public view returns (uint) {
@@ -28,16 +34,14 @@ contract TipJarWithMessages {
     }
 
     function withdraw() public {
-        require(msg.sender == owner, "Solo el propietario puede retirar");
+        require(msg.sender == owner, "Only owner can withdraw");
         payable(owner).transfer(address(this).balance);
     }
 
-    // Optional: get number of tips
     function getTipsCount() public view returns (uint) {
         return tips.length;
     }
 
-    // Optional: read a specific tip
     function getTip(uint index) public view returns (address, uint, string memory) {
         Tip memory t = tips[index];
         return (t.sender, t.amount, t.message);

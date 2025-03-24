@@ -11,6 +11,31 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "Tipped",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
@@ -141,7 +166,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/TipJarWithMessages.sol": "TipJarWithMessages"
+			"contracts/TipJarWithEvents.sol": "TipJarWithEvents"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -155,12 +180,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/TipJarWithMessages.sol": {
-			"keccak256": "0xe4a78fb0c1aec82e54acf6d58825515beb8a3a75e9153a03a57ee167c5124148",
+		"contracts/TipJarWithEvents.sol": {
+			"keccak256": "0x0a23b760af700b2c8749c5306f75e87b667fda75937ef6acf4cbfb748f012890",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://711c4d60b9d3c56ce58919daf19a8df0c118b7898640a6fdafb8cc6b4511bf35",
-				"dweb:/ipfs/Qmd2BCgRrXUpp2wbdMqXpiYLsnHQegNpBt6hPgoPyUUosZ"
+				"bzz-raw://1de2b64483ea226e25d8a3d260571339ac09eaba135382398866e4097f9ce0ef",
+				"dweb:/ipfs/Qmai6S3DM8c2RJm12W2wRVYSMAgJmzZ8YyA1aEb5XxCyYS"
 			]
 		}
 	},

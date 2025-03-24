@@ -36,6 +36,25 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "by",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawn",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "getBalance",
 				"outputs": [
@@ -181,11 +200,11 @@
 	},
 	"sources": {
 		"contracts/TipJarWithEvents.sol": {
-			"keccak256": "0x0a23b760af700b2c8749c5306f75e87b667fda75937ef6acf4cbfb748f012890",
+			"keccak256": "0x9bcb4bf0adbcca6a40759bf6a3f667cc198e5a861d2ed353d1e2a055d71167d2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1de2b64483ea226e25d8a3d260571339ac09eaba135382398866e4097f9ce0ef",
-				"dweb:/ipfs/Qmai6S3DM8c2RJm12W2wRVYSMAgJmzZ8YyA1aEb5XxCyYS"
+				"bzz-raw://e06bf7ea4c91af14872cd1d9eaee1062c4952e0f352400c828b8454003fcde58",
+				"dweb:/ipfs/QmTBAP4ktpCxpNxwfUX575kTPcMPthfHix9xDzcrrwZHkA"
 			]
 		}
 	},

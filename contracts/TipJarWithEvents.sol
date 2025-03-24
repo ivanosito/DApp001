@@ -15,6 +15,9 @@ contract TipJarWithEvents {
 
     // 📣 EVENT: Log every tip sent to the jar
     event Tipped(address indexed from, uint amount, string message);
+    // 📣 EVENT: Log every withdraw performed by the owner
+    event Withdrawn(address indexed by, uint amount);
+
 
     constructor() {
         owner = msg.sender;
@@ -35,7 +38,10 @@ contract TipJarWithEvents {
 
     function withdraw() public {
         require(msg.sender == owner, "Only owner can withdraw");
-        payable(owner).transfer(address(this).balance);
+        uint balanceBeforeWithdrawal = address(this).balance;
+        require(balanceBeforeWithdrawal > 0, "No balance to withdraw");
+        payable(owner).transfer(balanceBeforeWithdrawal);
+        emit Withdrawn(msg.sender, balanceBeforeWithdrawal);
     }
 
     function getTipsCount() public view returns (uint) {

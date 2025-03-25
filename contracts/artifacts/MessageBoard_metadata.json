@@ -69,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MessageBoard.sol": "MessageBoard"
+			"contracts/002_MessageBoard.sol": "MessageBoard"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -83,12 +83,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/MessageBoard.sol": {
-			"keccak256": "0x10f2ebf62960fff3a9d3ec04ddf033d35456d579257cc9f349b16aacf5c1e28d",
+		"contracts/002_MessageBoard.sol": {
+			"keccak256": "0x3a2df8e71c0dec84d0e66ab747f09bd2a7f54a9ddc00a32592656ae73f7540cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c84cc053420cdf89dc1813e05f6ea1e4416fb9451afc35988ef6290e6aefbd5",
-				"dweb:/ipfs/QmaZMhM8ncBEBBEtEFVNMDanxAvkETtT6YoqAa66zLzeFX"
+				"bzz-raw://af5dce938d4d560570865a0abfb4ae133aef1d29ea91ae3966729dc64020c62a",
+				"dweb:/ipfs/QmfFQE32stjUUp752K6E4SMkXnTjX16rUNHLFidR3YC1gg"
 			]
 		}
 	},

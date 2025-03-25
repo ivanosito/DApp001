@@ -212,7 +212,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/008_TipJarWithModifiers.sol": "TipJarWithModifiers"
+			"contracts/008_TipJarWithModifiers.sol": "TipJarWiths"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -227,11 +227,11 @@
 	},
 	"sources": {
 		"contracts/008_TipJarWithModifiers.sol": {
-			"keccak256": "0xd95abd0caf4dd04fde097afea98b62f1d9ee82cfa7f38e144ac6e47ef89a82da",
+			"keccak256": "0x71e7c57076a69dcd00945b6d227516f6a6c23ffe6639d38354dbe0cdcb278b6e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef9a1e13d62e6c2d0fa96641635ff5ba423b6fa74ff559a9192b7e002197bc9a",
-				"dweb:/ipfs/QmRd3bmXgMC14kY15vCpmt7EJy5bd3qVZakzfw2GqVwV9e"
+				"bzz-raw://66804e97a24fc87a9c7d9e2457a9cf4bbee489cabd1b436e48619a25d4dbf173",
+				"dweb:/ipfs/QmcTG8KTTyfyUAjKXGjRE8JTmYrV9M7Est1cY1S4vLkDHj"
 			]
 		}
 	},

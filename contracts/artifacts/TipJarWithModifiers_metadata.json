@@ -227,11 +227,11 @@
 	},
 	"sources": {
 		"contracts/008_TipJarWithModifiers.sol": {
-			"keccak256": "0xd95abd0caf4dd04fde097afea98b62f1d9ee82cfa7f38e144ac6e47ef89a82da",
+			"keccak256": "0x80577e4edce1233e32ebed59ebc0fd755f04b1747e655c5bc5137b45d0620cbf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef9a1e13d62e6c2d0fa96641635ff5ba423b6fa74ff559a9192b7e002197bc9a",
-				"dweb:/ipfs/QmRd3bmXgMC14kY15vCpmt7EJy5bd3qVZakzfw2GqVwV9e"
+				"bzz-raw://f7d12fcb2be36e5487e08a68ccf68c314719e37f9b9a29bb4b4467f65be605b3",
+				"dweb:/ipfs/QmeiJp1oQoPRxiQfT8tWo5zp5U3UkGbpTSiyvuzSV5WA4f"
 			]
 		}
 	},
